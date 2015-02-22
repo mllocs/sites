@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title maximcolls.com
+    meta(charset='utf-8')
+    link(href='/images/logo-small.png' rel='shortcut icon')
+    link(media='screen' rel='stylesheet' href='stylesheets/application.css')
+    script(data-main='javascript/application' src='javascript/require.js')
+body
+  .content
+    yield
+  .sidebar
+    img.logo(src='images/logo.png')
+    ul
+      li: a(href='/#about') About
+      li: a(href='/#work') Work
+      li: a(href='/#projects') Side Projects
+      li: a(href='/#open-source') Open Source
+      li: a(href='/#playground') Playground
+      li: a(href='/#contact') Contact

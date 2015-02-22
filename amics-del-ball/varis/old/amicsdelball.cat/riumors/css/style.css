@@ -1,0 +1,135 @@
+/* CSS Reset */
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+  
+/* CSS Grid */
+
+/*
+
+for centered layout
+body or wrapper div add class of .main
+.main {  margin:0 auto; width:85%;}
+
+*/
+
+.dp20,
+.dp25,
+.dp33,
+.dp50,
+.dp100{float:left; display: inline; *margin-left:-0.04em; } /* IE margin hack */
+
+/* dp = div percet */
+
+.dp20{width:20%;}
+.dp25{width:25%;}
+.dp33{width:33.33%;}
+.dp50{width:50%;}
+.dp100{width:100%;}
+.clear{ clear:both;}
+
+/* begin layout */
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #eee;
+}
+
+#wrapper {
+	width: 750px;
+	margin: 20px auto;
+	background: #888;
+	border: 1px solid grey;
+	border-radius: 6px;
+	-moz-border-radius: 6px;  
+    -webkit-border-radius: 6px;  
+}
+
+#header {
+	padding: 20px 15px;
+	background: #fff;
+	height: 80px;
+}
+
+h1.title {
+	font-family: 'times, arial';
+	margin: 10px 0px;
+	font-size: 55px;
+}
+
+h1.title a {
+	text-decoration: none;
+	color: color: #7f0072;
+}
+
+span.slogan {
+	margin: 10px 0px;
+	font-size: 35px;
+	color: #ccc;
+}
+
+.logo {
+	float: left;
+	margin-right: 25px;
+}
+
+#nav {
+	padding: 5px 10px;
+	background: #c99;
+}
+
+#nav ul {
+	margin: 2px 0px;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+	margin: 0px;
+	padding: 0px 3px;
+}
+
+#main {
+	float: left;
+	width: 470px;
+	padding: 25px 15px;
+	background: #ddd;
+}
+
+#main p {
+	margin: 8px 0px;
+}
+
+h2 {
+	margin: 0 0 1em;
+}
+
+#sidebar {
+	float: right;
+	width: 230px;
+	padding: 10px;
+	background: #EEE;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+	background: #c99;
+}
+
+#footer p {
+	margin:0;
+	font-size: 12px;
+}
+
+* html #footer {
+	height: 1px;
+}
+

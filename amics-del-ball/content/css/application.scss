@@ -1,0 +1,119 @@
+@import "../../bourbon/bourbon";
+@import url(http://fonts.googleapis.com/css?family=Playball);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'serif'; 
+}
+
+body {
+  color: #222; 
+  background: #fbfbfb;
+}
+
+a {
+  text-decoration: none; 
+  @include transition(color 0.3s ease-in-out);
+  color: #833892; 
+}
+
+a:hover, a.active {
+  color: #BE57D2; 
+}
+
+#main {
+  position: absolute;
+  left: 300px;
+  width: 500px; 
+
+  h1 {
+    font-size: 75px;
+    line-height: 65px;
+    letter-spacing: -1px;
+    padding-top: 40px;
+    padding-bottom: 20px; 
+    text-shadow: 2px 2px 3px #ccc;
+    font-family: Playball;
+    &.end {
+      font-size: 29px;
+      text-align: center;
+      cursor: default;
+      padding: 0 0 15px;
+    }
+  }
+  h2 {
+    font-size: 35px;
+    padding-top: 40px; 
+    text-shadow: 2px 2px 3px #ccc;
+  }
+  p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 24px; 
+    &.video {
+      margin-top: 50px;
+    }
+  }
+  ul, ol {
+    margin: 20px; 
+    li {
+      font-size: 18px;
+      padding: 3px 0;
+      list-style-type: square; 
+      span#email {
+        color: #f30; 
+      }
+    }
+  }
+}
+
+#sidebar {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 200px;
+  padding: 20px 40px 0 0;
+  border-right: 1px solid #ccc;
+  text-align: center; 
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 20px; 
+  }
+  ul {
+    list-style-type: none;
+    margin: 30px 0 25px; 
+    li {
+      line-height: 25px; 
+      padding: 5px 0;
+      a {
+        text-shadow: 2px 2px 3px #ccc;
+        font-weight: bold;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+#footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 40px;
+  color: #888;
+  font-size: 14px;
+}
+
+#disqus_thread {
+  margin-top: 35px;
+  a:hover {
+    color: black !important;
+  }
+  #main-nav {
+    display: none;
+  }
+}
