@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'helvetica';
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes rightin {
+  from { right: -600px; }
+  to   { right: -120px; }
+}
+
+body {
+  background: url('../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+  color: #333;
+}
+
+.bird {
+  position: absolute;
+  background: url('../images/bird.png') no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 600px;
+  top: 10%;
+  right: -120px;
+  z-index: -1;
+  animation: rightin 1s;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 15px 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: fadein 3s;
+}
+
+.text {
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: fadein 3s;
+
+  p {
+    padding: 5px 0;
+  }
+}
+
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #bbb;
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: 10px;
+  left: 0;
+  font-size: 14px;
+  text-align: center;
+}
